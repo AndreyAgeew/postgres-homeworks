@@ -12,3 +12,5 @@ quary_orders = """INSERT INTO orders (order_id, customer_id, employee_id, order_
 database.instert_to_db("north_data/customers_data.csv", quary_customers)
 database.instert_to_db("north_data/employees_data.csv", quary_employees)
 database.instert_to_db("north_data/orders_data.csv", quary_orders)
+
+database.conn.close()
